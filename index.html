@@ -5,138 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Atomic Baseload Hub | Premium SMR & Nuclear Compute Domains</title>
-    <meta name="description" content="Institutional portfolio of strategic digital assets for SMR infrastructure, Nuclear Baseload power, and AI Compute.">
+    <meta name="description" content="Institutional portfolio of strategic digital assets for SMR infrastructure, Nuclear Baseload power, and AI Compute. Secure the foundation of the 2026 energy grid.">
+    <meta name="keywords" content="Atomic Baseload, Reactor Compute, SMR Energy, Nuclear Compute, Atomic Thermal, Power Grid, Atomic Net Zero, Atomic CFE, Energy Infrastructure">
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --bg: #0f172a;
             --card: #1e293b;
-            --accent: #d4af37;
-            --text: #f8fafc;
-            --muted: #94a3b8;
+            --accent: #ffcc33; /* Brighter Gold for High Contrast */
+            --text: #ffffff;
+            --muted: #cbd5e1;
             --green: #10b981;
         }
 
         body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            font-family: 'Inter', -apple-system, system-ui, sans-serif; 
             background: var(--bg); 
             color: var(--text); 
-            margin: 0; 
+            margin: 0; padding: 0; 
             line-height: 1.6;
-            -webkit-font-smoothing: antialiased; /* Makes fonts crisper on Mac/iOS */
+            -webkit-font-smoothing: antialiased;
         }
 
         .header { 
             background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); 
-            padding: 100px 20px; 
-            text-align: center; 
-            border-bottom: 2px solid var(--accent); 
+            padding: 100px 20px; text-align: center; border-bottom: 3px solid var(--accent);
         }
 
         .container { 
-            max-width: 1000px; 
-            margin: -60px auto 60px; 
-            background: var(--card); 
-            padding: 50px; 
-            border-radius: 12px; 
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
-            border: 1px solid rgba(212, 175, 55, 0.1); 
+            max-width: 1100px; margin: -60px auto 60px; 
+            background: var(--card); padding: 50px; border-radius: 16px; 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255, 204, 51, 0.2);
         }
 
-        h1 { 
-            margin: 0; 
-            font-size: 3.5rem; 
-            font-weight: 800; 
-            letter-spacing: -0.02em; /* Tighter heading for modern look */
-        }
+        h1 { margin: 0; font-size: 3.8rem; font-weight: 800; letter-spacing: -2px; }
+        .tagline { color: var(--accent); text-transform: uppercase; letter-spacing: 5px; font-weight: 700; margin-top: 15px; font-size: 1.1rem; }
 
-        .tagline { 
-            color: var(--accent); 
-            text-transform: uppercase; 
-            letter-spacing: 4px; 
-            font-weight: 600; 
-            font-size: 1.1rem;
-            margin-top: 15px;
-        }
-
-        h2 { 
-            font-weight: 800; 
-            color: var(--accent); 
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
+        h2 { font-weight: 800; color: var(--accent); font-size: 2rem; margin-bottom: 30px; }
 
         .domain-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-            gap: 20px; 
-            margin: 40px 0; 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 20px; margin: 40px 0; 
         }
 
-        /* UPDATED: High-Clarity Domain Font */
+        /* HIGH-CLARITY DOMAIN BOXES */
         .domain-item { 
-            background: rgba(15, 23, 42, 0.6); 
-            border: 1px solid rgba(255,255,255,0.1); 
-            padding: 18px 25px; 
-            border-radius: 10px; 
-            font-weight: 600; /* Bold enough to be clear but not chunky */
-            font-size: 1.15rem; /* Slightly larger */
-            letter-spacing: 0.01em; 
-            color: var(--text); 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            transition: 0.3s ease;
-        }
-
-        .domain-item:hover { 
-            border-color: var(--accent); 
-            background: rgba(212, 175, 55, 0.05); 
-            transform: translateY(-2px); 
-        }
-
-        .status { 
-            height: 10px; 
-            width: 100x; 
-            background: var(--green); 
-            border-radius: 50%; 
-            box-shadow: 0 0 10px var(--green); 
-        }
-
-        .form-container { 
-            background: rgba(15, 23, 42, 0.8); 
-            padding: 40px; 
+            background: #020617; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            padding: 24px 28px; 
             border-radius: 12px; 
-            margin-top: 50px; 
+            font-weight: 800; 
+            font-size: 1.3rem; 
+            color: #ffffff;
+            display: flex; justify-content: space-between; align-items: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        .domain-item:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+        .status { height: 12px; width: 12px; background: var(--green); border-radius: 50%; box-shadow: 0 0 12px var(--green); }
+
+        .form-container { background: rgba(2, 6, 23, 0.6); padding: 45px; border-radius: 15px; margin-top: 50px; border: 1px solid rgba(255,255,255,0.05); }
+        h3 { font-size: 1.8rem; margin-bottom: 10px; color: var(--accent); }
 
         input, textarea { 
-            width: 100%; 
-            padding: 15px; 
-            background: var(--bg); 
-            border: 1px solid #334155; 
-            border-radius: 8px; 
-            color: white; 
-            font-size: 1.05rem; 
-            margin-bottom: 20px; 
-            font-family: inherit;
+            width: 100%; padding: 18px; background: #020617; border: 1px solid #334155; 
+            border-radius: 10px; color: white; font-size: 1.1rem; margin-bottom: 25px; font-family: inherit;
         }
 
         .btn { 
-            background: var(--accent); 
-            color: var(--bg); 
-            padding: 20px; 
-            border-radius: 8px; 
-            font-weight: 800; 
-            width: 100%; 
-            border: none; 
-            cursor: pointer; 
-            text-transform: uppercase; 
-            font-size: 1.1rem;
-            letter-spacing: 1px;
+            background: var(--accent); color: #000; padding: 22px; border-radius: 10px; 
+            font-weight: 800; width: 100%; border: none; cursor: pointer; text-transform: uppercase; font-size: 1.25rem;
+            transition: 0.2s;
         }
+        .btn:hover { background: #ffffff; transform: scale(1.01); }
 
         .btn-secondary {
             background: transparent;
@@ -146,16 +89,15 @@
             padding: 12px 30px;
             display: inline-block;
             text-decoration: none;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             font-weight: 600;
+            border-radius: 8px;
+            text-transform: uppercase;
         }
+        .btn-secondary:hover { background: var(--accent); color: #000; }
 
-        footer { 
-            text-align: center; 
-            padding: 60px 20px; 
-            color: var(--muted); 
-            font-size: 0.95rem; 
-        }
+        footer { text-align: center; padding: 80px 20px; color: var(--muted); font-size: 1.1rem; }
+        footer a { color: var(--accent); text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -167,6 +109,7 @@
 
 <div class="container">
     <h2>Institutional Portfolio</h2>
+    
     <div class="domain-grid">
         <div class="domain-item">atomicbaseload.com <span class="status"></span></div>
         <div class="domain-item">reactorcompute.com <span class="status"></span></div>
@@ -187,19 +130,13 @@
     <a href="prospectus.pdf" class="btn-secondary">Download Private Prospectus (PDF)</a>
 
     <section class="form-container">
-        <h3>Institutional Acquisition Inquiry</h3>
-        <form action="https://formspree.io/f/mlgokjdl" method="POST">
+        <h3>Secure Acquisition Inquiry</h3>
+        <p style="color: var(--muted); margin-bottom: 25px;">Submit an institutional offer or request bulk acquisition terms.</p>
+        
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
             <input type="text" name="name" placeholder="Name / Organization" required>
-            <input type="email" name="email" placeholder="Corporate Email" required>
-            <textarea name="message" placeholder="Offer details..." required></textarea>
-            <button type="submit" class="btn">Submit Secure Inquiry</button>
-        </form>
-    </section>
-</div>
+            <input type="email" name="email" placeholder
+   
+         
 
-<footer>
-    &copy; 2026 Atomic Baseload Hub | Managed Portfolio | <a href="mailto:ceall06@proton.me" style="color: var(--accent);">ceall06@proton.me</a>
-</footer>
 
-</body>
-</html>
