@@ -6,146 +6,160 @@
     
     <title>Atomic Baseload Hub | Premium SMR & Nuclear Compute Domains</title>
     <meta name="description" content="Strategic digital assets for SMR infrastructure, Nuclear Baseload power, and AI Compute. Secure the high-value foundation of the next energy grid.">
-    <meta name="keywords" content="Atomic Baseload, Reactor Compute, SMR Energy, Nuclear Compute, Atomic Thermal, Energy Infrastructure Domains">
     
-    <meta property="og:title" content="Atomic Baseload Hub">
-    <meta property="og:description" content="Premium Energy & Compute Infrastructure Portfolio">
-    <meta property="og:url" content="https://atomicbaseload.com">
-
     <style>
         :root {
-            --primary: #1a2a3a;
+            --bg-dark: #0f172a;
+            --card-dark: #1e293b;
             --accent: #d4af37;
-            --bg: #f8fafc;
-            --text: #334155;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --green: #10b981;
         }
+        
         body { 
             font-family: 'Helvetica Neue', Arial, sans-serif; 
             line-height: 1.6; 
-            color: var(--text); 
-            background-color: var(--bg); 
+            color: var(--text-main); 
+            background-color: var(--bg-dark); 
             margin: 0; 
             padding: 0; 
         }
+
         .header { 
-            background: var(--primary); 
-            color: white; 
-            padding: 80px 20px; 
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); 
+            padding: 100px 20px; 
             text-align: center; 
-            border-bottom: 4px solid var(--accent);
+            border-bottom: 2px solid var(--accent);
         }
+
         .container { 
-            max-width: 900px; 
-            margin: -50px auto 60px; 
-            background: white; 
-            padding: 40px; 
+            max-width: 1000px; 
+            margin: -60px auto 60px; 
+            background: var(--card-dark); 
+            padding: 50px; 
             border-radius: 12px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
-        h1 { margin: 0; font-size: 3rem; letter-spacing: -1px; }
-        .tagline { font-size: 1.1rem; opacity: 0.9; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px; }
-        h2 { color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
+
+        h1 { margin: 0; font-size: 3.2rem; letter-spacing: -1px; }
+        .tagline { font-size: 1.1rem; color: var(--accent); margin-top: 10px; text-transform: uppercase; letter-spacing: 3px; font-weight: bold; }
+        
+        h2 { color: var(--accent); border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-top: 0; }
 
         .domain-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
             gap: 15px; 
             margin: 30px 0; 
         }
+        
         .domain-item { 
-            background: #fff; 
-            border: 1px solid #e2e8f0; 
-            padding: 12px 15px; 
-            border-radius: 6px; 
+            background: rgba(15, 23, 42, 0.5); 
+            border: 1px solid rgba(255,255,255,0.05); 
+            padding: 15px 20px; 
+            border-radius: 8px; 
             font-weight: 600;
-            color: var(--primary);
+            font-family: 'Courier New', monospace;
+            color: var(--text-main);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .status-dot { height: 8px; width: 8px; background-color: #10b981; border-radius: 50%; }
+
+        .status-dot { height: 8px; width: 8px; background-color: var(--green); border-radius: 50%; box-shadow: 0 0 8px var(--green); }
 
         .form-container {
-            background: #f1f5f9;
-            padding: 30px;
+            background: rgba(15, 23, 42, 0.8);
+            padding: 40px;
             border-radius: 10px;
-            margin-top: 40px;
+            margin-top: 50px;
+            border: 1px solid rgba(255,255,255,0.05);
         }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        
+        .form-group { margin-bottom: 20px; text-align: left; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--text-dim); font-size: 0.85rem; text-transform: uppercase; }
+        
         input, textarea { 
-            width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 5px; box-sizing: border-box; 
+            width: 100%; padding: 15px; background: var(--bg-dark); border: 1px solid #334155; 
+            border-radius: 6px; box-sizing: border-box; color: white; font-size: 1rem;
         }
-        textarea { height: 100px; }
-
+        
         .btn { 
-            background: var(--primary); 
-            color: white; 
-            padding: 15px 30px; 
+            background: var(--accent); 
+            color: var(--bg-dark); 
+            padding: 18px 40px; 
             text-decoration: none; 
             border-radius: 6px; 
             font-weight: bold; 
             display: inline-block;
             cursor: pointer;
-            border: 1px solid var(--accent);
+            border: none;
             width: 100%;
-            transition: 0.3s;
+            font-size: 1.1rem;
+            text-transform: uppercase;
         }
-        .btn:hover { background: #243b55; color: var(--accent); }
-        .btn-secondary { background: #fff; color: var(--primary); border: 1px solid #cbd5e1; margin-bottom: 20px; width: auto; display: block; text-align: center;}
 
-        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #94a3b8; line-height: 2; }
+        .btn-secondary { 
+            background: transparent; 
+            color: var(--accent); 
+            border: 1px solid var(--accent); 
+            margin-bottom: 30px; 
+            width: auto; 
+            display: block; 
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        footer { text-align: center; padding: 60px 20px; font-size: 0.85rem; color: var(--text-dim); }
+        footer a { color: var(--accent); text-decoration: none; }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1>Atomic Baseload Hub</h1>
-        <p class="tagline">Strategic Energy & Compute Assets</p>
+        <p class="tagline">Strategic Energy & Compute Infrastructure</p>
     </div>
 
     <div class="container">
         <section>
-            <h2>Strategic Asset Portfolio</h2>
+            <h2>Strategic Portfolio</h2>
             <div class="domain-grid">
                 <div class="domain-item">atomicbaseload.com <span class="status-dot"></span></div>
                 <div class="domain-item">reactorcompute.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomicthermal.com <span class="status-dot"></span></div>
-                <div class="domain-item">nuclearcomputecampus.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomicpowergrid.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomicsovereignty.com <span class="status-dot"></span></div>
-                <div class="domain-item">atomicppa.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomiccampus.com <span class="status-dot"></span></div>
+                <div class="domain-item">nuclearcomputecampus.com <span class="status-dot"></span></div>
+                <div class="domain-item">atomicppa.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomicstandards.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomicverify.com <span class="status-dot"></span></div>
-                <div class="domain-item">atomicdatametrics.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomiccfe.com <span class="status-dot"></span></div>
+                <div class="domain-item">atomicdatametrics.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomicnetzero.com <span class="status-dot"></span></div>
                 <div class="domain-item">atomiccarbonfree.com <span class="status-dot"></span></div>
             </div>
             
-            <a href="prospectus.pdf" class="btn btn-secondary">Download 2026 Portfolio Prospectus (PDF)</a>
+            <a href="prospectus.pdf" class="btn btn-secondary">Download Private Prospectus (PDF)</a>
         </section>
 
         <section class="form-container">
             <h3>Acquisition Inquiry</h3>
-            <p>Submit an offer or request formal acquisition terms below.</p>
             
-            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <form action="https://formspree.io/f/mlgokjdl" method="POST">
                 <div class="form-group">
-                    <label>Your Name / Organization</label>
+                    <label>Organization Name</label>
                     <input type="text" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
+                    <label>Contact Email</label>
                     <input type="email" name="_replyto" required>
                 </div>
                 <div class="form-group">
-                    <label>Domain of Interest</label>
-                    <input type="text" name="subject" placeholder="e.g. atomicbaseload.com">
-                </div>
-                <div class="form-group">
-                    <label>Message / Offer</label>
+                    <label>Inquiry Message</label>
                     <textarea name="message" required></textarea>
                 </div>
                 <input type="hidden" name="_next" value="https://atomicbaseload.com">
@@ -155,9 +169,9 @@
     </div>
 
     <footer>
-        &copy; 2026 Atomic Baseload Hub | <a href="https://atomicbaseload.com" style="color: #94a3b8; text-decoration: none;">atomicbaseload.com</a>
+        &copy; 2026 Atomic Baseload Hub | <a href="https://atomicbaseload.com">atomicbaseload.com</a>
         <br>
-        Direct Inquiries: <a href="mailto:ceall06@proton.me" style="color: #94a3b8; text-decoration: underline;">ceall06@proton.me</a>
+        Direct: ceall06@proton.me
     </footer>
 
 </body>
