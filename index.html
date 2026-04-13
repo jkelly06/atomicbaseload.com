@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVKP3YL75T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -21,7 +29,7 @@
         }
 
         body { 
-            font-family: 'Inter', -apple-system, sans-serif; 
+            font-family: 'Inter', sans-serif; 
             background: var(--bg); 
             color: var(--text); 
             margin: 0; padding: 0; 
@@ -46,10 +54,8 @@
         h2 { font-weight: 800; color: var(--accent); font-size: 2rem; margin-bottom: 30px; }
 
         .domain-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-            gap: 20px; 
-            margin: 40px 0; 
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+            gap: 20px; margin: 40px 0; 
         }
 
         .domain-item { 
@@ -60,21 +66,18 @@
             font-weight: 800; 
             font-size: 1.3rem; 
             color: #ffffff;
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center;
+            display: flex; justify-content: space-between; align-items: center;
         }
 
         .status { height: 12px; width: 12px; background: var(--green); border-radius: 50%; box-shadow: 0 0 12px var(--green); }
 
-        /* CONTACT FORM SECTION */
         .form-container { 
             background: #020617; 
             padding: 45px; 
             border-radius: 15px; 
             margin-top: 60px; 
-            border: 2px solid var(--accent); /* High-visibility border to ensure it's seen */
-            display: block !important; /* Forces visibility */
+            border: 2px solid var(--accent);
+            display: block !important;
         }
 
         .form-group { margin-bottom: 25px; text-align: left; }
@@ -156,7 +159,7 @@
         <h3 style="color:var(--accent); font-size: 1.8rem; margin: 0 0 10px 0; font-weight: 800;">Secure Acquisition Inquiry</h3>
         <p style="color: var(--muted); margin-bottom: 35px;">Submit an institutional offer or request bulk acquisition terms.</p>
         
-        <form action="https://formspree.io/f/mlgokjdl" method="POST">
+        <form action="https://formspree.io/f/xykbrzgl" method="POST">
             <div class="form-group">
                 <label>Name / Organization</label>
                 <input type="text" name="name" placeholder="John Kelly / Atomic Corp" required>
@@ -176,7 +179,8 @@
             <button type="submit" class="btn">Submit Secure Inquiry</button>
         </form>
     </section>
-    </div>
+
+</div>
 
 <footer>
     &copy; 2026 Atomic Baseload Hub | <a href="mailto:ceall06@proton.me" style="color:var(--accent)">ceall06@proton.me</a>
