@@ -11,9 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Atomic Baseload Hub | Powering AI Infrastructure</title>
-    <meta name="description" content="Atomic and nuclear systems providing the baseload power needed to sustain continuous compute in the AI era. Strategic digital infrastructure assets.">
+    <title>Atomic Baseload Hub | Critical AI Infrastructure Assets</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
@@ -25,6 +23,7 @@
             --text: #ffffff;
             --muted: #cbd5e1;
             --green: #10b981;
+            --urgency: #ef4444;
         }
 
         body { 
@@ -38,122 +37,193 @@
 
         .header { 
             background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); 
-            padding: 100px 20px; text-align: center; border-bottom: 3px solid var(--accent);
+            padding: 80px 20px; text-align: center; border-bottom: 3px solid var(--accent);
         }
 
         .container { 
             max-width: 1100px; margin: -60px auto 40px; 
-            background: var(--card); padding: 50px; border-radius: 16px; 
+            background: var(--card); padding: 40px; border-radius: 16px; 
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); border: 1px solid rgba(255, 204, 51, 0.2);
         }
 
-        h1 { margin: 0; font-size: 3.5rem; font-weight: 800; letter-spacing: -2px; line-height: 1.1; }
-        .tagline { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-top: 20px; font-size: 1.2rem; }
+        h1 { margin: 0; font-size: 3rem; font-weight: 800; letter-spacing: -2px; line-height: 1.1; }
+        .tagline { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-top: 15px; font-size: 1.1rem; }
         
-        .thesis-section { margin: 40px 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; }
-        .thesis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
-        .thesis-item h3 { color: var(--accent); font-size: 1.1rem; text-transform: uppercase; margin-bottom: 10px; }
-        .thesis-item p { color: var(--muted); font-size: 1rem; margin: 0; }
-
-        h2 { font-weight: 800; color: var(--accent); font-size: 2rem; margin-bottom: 30px; text-align: center; }
-
-        .domain-grid { 
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-            gap: 15px; margin: 40px 0; 
+        .urgency-banner {
+            background: var(--urgency);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
         }
 
-        .domain-item { 
-            background: #020617; 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            padding: 20px 25px; 
-            border-radius: 10px; 
-            font-weight: 700; 
-            font-size: 1.2rem; 
-            color: #ffffff;
-            display: flex; justify-content: space-between; align-items: center;
-        }
+        .thesis-section { margin: 40px 0; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .thesis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .thesis-item h3 { color: var(--accent); font-size: 1rem; text-transform: uppercase; margin-bottom: 8px; }
+        .thesis-item p { color: var(--muted); font-size: 0.95rem; }
 
-        .status { height: 10px; width: 10px; background: var(--green); border-radius: 50%; box-shadow: 0 0 10px var(--green); }
+        .portfolio-header { text-align: center; margin: 60px 0 30px; }
+        .portfolio-header h2 { font-size: 2.2rem; font-weight: 800; color: var(--accent); margin: 0; }
+        .portfolio-header p { color: var(--muted); font-weight: 600; }
+
+        .domain-list { display: flex; flex-direction: column; gap: 15px; margin-bottom: 50px; }
+        .domain-row {
+            background: #020617;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 300px 1fr 200px;
+            align-items: center;
+            gap: 20px;
+            transition: 0.3s;
+        }
+        .domain-row:hover { border-color: var(--accent); transform: scale(1.01); }
+        .domain-name { font-weight: 800; font-size: 1.25rem; color: #ffffff; }
+        .domain-thesis { font-size: 0.95rem; color: var(--muted); border-left: 2px solid var(--card); padding-left: 20px; }
+        .buy-logic { font-size: 0.85rem; font-weight: 700; color: var(--accent); text-transform: uppercase; text-align: right; }
 
         .form-container { 
             background: #020617; 
             padding: 45px; 
             border-radius: 15px; 
-            margin-top: 50px; 
-            border: 1px solid var(--accent);
+            border: 2px solid var(--accent);
         }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+        input, textarea { width: 100%; padding: 15px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; color: white; font-family: inherit; box-sizing: border-box; }
 
-        .form-group { margin-bottom: 25px; }
-        label { display: block; margin-bottom: 10px; color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.9rem; }
+        .btn { background: var(--accent); color: #000; padding: 20px; border-radius: 8px; font-weight: 800; width: 100%; border: none; cursor: pointer; text-transform: uppercase; font-size: 1.2rem; }
 
-        input, textarea { 
-            width: 100%; padding: 18px; background: #1e293b; border: 1px solid #334155; 
-            border-radius: 10px; color: white; font-size: 1.1rem; box-sizing: border-box; 
+        .bottom-nav { text-align: center; margin: 60px 0; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .btn-pdf { background: transparent; border: 2px solid var(--accent); color: var(--accent); padding: 15px 40px; display: inline-block; text-decoration: none; border-radius: 8px; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; }
+        
+        footer { text-align: center; padding: 40px; color: var(--muted); font-size: 0.9rem; }
+
+        @media (max-width: 900px) {
+            .domain-row { grid-template-columns: 1fr; text-align: center; }
+            .domain-thesis { border-left: none; border-top: 1px solid #334155; padding: 15px 0 0 0; }
+            .buy-logic { text-align: center; }
         }
-
-        .btn { 
-            background: var(--accent); color: #000; padding: 22px; border-radius: 10px; 
-            font-weight: 800; width: 100%; border: none; cursor: pointer; text-transform: uppercase; font-size: 1.25rem;
-        }
-
-        .bottom-links { text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
-        .btn-secondary {
-            background: transparent; border: 2px solid var(--accent); color: var(--accent);
-            padding: 15px 40px; display: inline-block; text-decoration: none; border-radius: 8px; 
-            font-weight: 800; text-transform: uppercase; transition: 0.3s; margin-bottom: 20px;
-        }
-        .btn-secondary:hover { background: var(--accent); color: #000; }
-
-        footer { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 1rem; }
     </style>
 </head>
 <body>
 
+<div class="urgency-banner">Strategic Asset Warning: Hyperscale energy demand is outpacing digital infrastructure availability.</div>
+
 <div class="header">
     <h1>Atomic Baseload powers always-on infrastructure in the AI era.</h1>
-    <p class="tagline">Strategic 24/7 Power Assets</p>
+    <p class="tagline">The Final Frontier of Energy Infrastructure</p>
 </div>
 
 <div class="container">
     <section class="thesis-section">
         <div class="thesis-grid">
             <div class="thesis-item">
-                <h3>The AI Energy Thesis</h3>
-                <p>As AI demand grows, reliable 24/7 energy becomes critical. Intermittent sources cannot sustain the sub-millisecond uptime requirements of hyperscale compute.</p>
+                <h3>The 24/7 Power Gap</h3>
+                <p>AI compute requires "Firm Power." Intermittent renewables are failing the uptime requirements of modern data centers.</p>
             </div>
             <div class="thesis-item">
-                <h3>Baseload Modernization</h3>
-                <p>Atomic and nuclear systems provide the "firm power" needed for continuous operations, allowing data centers to decouple from volatile grid constraints.</p>
+                <h3>The Atomic Pivot</h3>
+                <p>Nuclear is the only carbon-free solution capable of Giga-scale output. These assets sit at the center of the next trillion-dollar energy build-out.</p>
             </div>
             <div class="thesis-item">
-                <h3>Strategic Infrastructure</h3>
-                <p>This portfolio captures the digital real estate for the next generation of nuclear-powered data centers, energy platforms, and carbon-free compute campuses.</p>
+                <h3>Acquisition Urgency</h3>
+                <p>Domain real estate in this sector is finite. Once these category-killers are deployed, the barrier to entry becomes insurmountable.</p>
             </div>
         </div>
     </section>
 
-    <h2>Institutional Portfolio</h2>
+    <div class="portfolio-header">
+        <h2>Institutional Portfolio</h2>
+        <p>Available for Individual or Bulk Acquisition</p>
+    </div>
     
-    <div class="domain-grid">
-        <div class="domain-item">atomicbaseload.com <span class="status"></span></div>
-        <div class="domain-item">atomicgiga.com <span class="status"></span></div>
-        <div class="domain-item">reactorcompute.com <span class="status"></span></div>
-        <div class="domain-item">atomicthermal.com <span class="status"></span></div>
-        <div class="domain-item">atomicpowergrid.com <span class="status"></span></div>
-        <div class="domain-item">atomicsovereignty.com <span class="status"></span></div>
-        <div class="domain-item">atomiccampus.com <span class="status"></span></div>
-        <div class="domain-item">nuclearcomputecampus.com <span class="status"></span></div>
-        <div class="domain-item">atomicppa.com <span class="status"></span></div>
-        <div class="domain-item">atomicstandards.com <span class="status"></span></div>
-        <div class="domain-item">atomicverify.com <span class="status"></span></div>
-        <div class="domain-item">atomiccfe.com <span class="status"></span></div>
-        <div class="domain-item">atomicdatametrics.com <span class="status"></span></div>
-        <div class="domain-item">atomicnetzero.com <span class="status"></span></div>
-        <div class="domain-item">atomiccarbonfree.com <span class="status"></span></div>
+    <div class="domain-list">
+        <div class="domain-row">
+            <div class="domain-name">atomicbaseload.com</div>
+            <div class="domain-thesis">The definitive term for 24/7 carbon-free nuclear power. The anchor for any modern energy platform.</div>
+            <div class="buy-logic">Category Flagship</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicgiga.com</div>
+            <div class="domain-thesis">Positioned for the Giga-watt era of data centers. Essential for hyperscale power developers.</div>
+            <div class="buy-logic">Hyperscale Authority</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">reactorcompute.com</div>
+            <div class="domain-thesis">Captures the technical convergence of nuclear hardware and AI compute clusters.</div>
+            <div class="buy-logic">Technical Vertical</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicthermal.com</div>
+            <div class="domain-thesis">Focused on the critical heat-exchange and cooling infrastructure needed for AI/Nuclear sites.</div>
+            <div class="buy-logic">Infrastructure Core</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicpowergrid.com</div>
+            <div class="domain-thesis">Controls the narrative for the specialized grids linking SMRs to AI training campuses.</div>
+            <div class="buy-logic">Utility Play</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicsovereignty.com</div>
+            <div class="domain-thesis">Targeting national and state-level energy independence and "behind-the-meter" security.</div>
+            <div class="buy-logic">Strategic Security</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomiccampus.com</div>
+            <div class="domain-thesis">The ultimate branding for mixed-use industrial AI and nuclear generation facilities.</div>
+            <div class="buy-logic">Real Estate Play</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">nuclearcomputecampus.com</div>
+            <div class="domain-thesis">Highly specific descriptive asset for physical site development and institutional planning.</div>
+            <div class="buy-logic">Project Branding</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicppa.com</div>
+            <div class="domain-thesis">The hub for the next generation of Power Purchase Agreements in the nuclear-AI space.</div>
+            <div class="buy-logic">Fintech / Contract</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicstandards.com</div>
+            <div class="domain-thesis">Authoritative asset for compliance, safety protocols, and industry benchmarking.</div>
+            <div class="buy-logic">Industry Authority</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicverify.com</div>
+            <div class="domain-thesis">Verification services for carbon-free energy (CFE) credits and nuclear uptime metrics.</div>
+            <div class="buy-logic">SaaS / Validation</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomiccfe.com</div>
+            <div class="domain-thesis">Short-form definitive asset for "Carbon-Free Energy" mandates (Google/Microsoft ESG standards).</div>
+            <div class="buy-logic">ESG Leadership</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicdatametrics.com</div>
+            <div class="domain-thesis">The data-driven side of energy consumption and generation monitoring.</div>
+            <div class="buy-logic">Data / Analytics</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomicnetzero.com</div>
+            <div class="domain-thesis">The global goal. The core branding for any corporate "Net Zero" initiative powered by nuclear.</div>
+            <div class="buy-logic">Global ESG</div>
+        </div>
+        <div class="domain-row">
+            <div class="domain-name">atomiccarbonfree.com</div>
+            <div class="domain-thesis">High-search volume asset for the primary mandate of modern energy transition.</div>
+            <div class="buy-logic">Market Reach</div>
+        </div>
     </div>
 
     <section class="form-container">
         <h3 style="color:var(--accent); font-size: 1.8rem; margin: 0 0 10px 0; font-weight: 800; text-align: center;">Secure Acquisition Inquiry</h3>
+        <p style="text-align: center; color: var(--muted); margin-bottom: 35px;">Submit an institutional offer. High-interest assets are subject to immediate withdrawal.</p>
+        
         <form action="https://formspree.io/f/xykbrzgl" method="POST">
             <div class="form-group">
                 <label>Name / Organization</label>
@@ -164,26 +234,25 @@
                 <input type="email" name="email" required>
             </div>
             <div class="form-group">
-                <label>Inquiry Details</label>
-                <textarea name="message" rows="4" placeholder="Bulk acquisition or individual asset interest..." required></textarea>
+                <label>Acquisition Details</label>
+                <textarea name="message" rows="4" placeholder="List individual domains or bulk portfolio interest..." required></textarea>
             </div>
             <input type="hidden" name="_next" value="https://atomicbaseload.com">
-            <button type="submit" class="btn">Submit Secure Inquiry</button>
+            <button type="submit" class="btn">Initiate Formal Inquiry</button>
         </form>
     </section>
 
-    <div class="bottom-links">
-        <a href="prospectus.pdf" class="btn-secondary">Download Institutional Prospectus (PDF)</a>
-        <p style="color: var(--muted);">Direct Contact: <a href="mailto:ceall06@proton.me" style="color:var(--accent); text-decoration:none;">ceall06@proton.me</a></p>
+    <div class="bottom-nav">
+        <a href="prospectus.pdf" class="btn-pdf">Download Institutional Prospectus (PDF)</a>
+        <p style="color: var(--muted); font-weight: 700;">Direct Contact: <a href="mailto:ceall06@proton.me" style="color:var(--accent); text-decoration:none;">ceall06@proton.me</a></p>
     </div>
 </div>
 
 <footer>
-    &copy; 2026 Atomic Baseload Hub | Managed Digital Infrastructure
+    &copy; 2026 Atomic Baseload Hub | Institutional Asset Management
 </footer>
 
 </body>
 </html>
-         
 
 
