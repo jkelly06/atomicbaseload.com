@@ -50,7 +50,6 @@
         h1 { margin: 0; font-size: 3rem; font-weight: 800; letter-spacing: -2px; line-height: 1.1; }
         .tagline { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-top: 15px; font-size: 1.1rem; }
         
-        /* New Executive Thesis Section */
         .executive-summary { margin: 40px 0; padding: 30px; background: rgba(2, 6, 23, 0.4); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
         .executive-summary h3 { color: var(--accent); margin-top: 0; font-size: 1.4rem; }
         .executive-summary ul { list-style: none; padding: 0; margin: 20px 0; }
@@ -78,6 +77,8 @@
         .buy-logic { font-size: 0.85rem; font-weight: 700; color: var(--accent); text-transform: uppercase; text-align: right; }
 
         .form-container { background: #020617; padding: 45px; border-radius: 15px; border: 2px solid var(--accent); }
+        .due-diligence-note { background: rgba(255, 204, 51, 0.05); border: 1px dashed var(--accent); padding: 15px; border-radius: 8px; color: var(--accent); font-size: 0.9rem; margin-bottom: 25px; text-align: center; font-weight: 600; }
+        
         .form-group { margin-bottom: 20px; }
         label { display: block; margin-bottom: 8px; color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
         input, textarea { width: 100%; padding: 15px; background: #1e293b; border: 1px solid #334155; border-radius: 8px; color: white; font-family: inherit; box-sizing: border-box; }
@@ -201,8 +202,13 @@
     </div>
 
     <section class="form-container">
-        <h3 style="color:var(--accent); font-size: 1.8rem; margin: 0 0 10px 0; font-weight: 800; text-align: center;">Secure Acquisition Inquiry</h3>
-        <p style="text-align: center; color: var(--muted); margin-bottom: 35px;">Provide organization details for formal inquiry. Bulk portfolio offers preferred.</p>
+        <h3 style="color:var(--accent); font-size: 1.8rem; margin: 0 0 10px 0; font-weight: 800; text-align: center;">Strategic Asset Inquiry</h3>
+        
+        <div class="due-diligence-note">
+            Institutional buyers may request a formal Capability Statement or a secure data room link for bulk portfolio due diligence.
+        </div>
+
+        <p style="text-align: center; color: var(--muted); margin-bottom: 35px;">Provide organization details to initiate the vetting process.</p>
         
         <form action="https://formspree.io/f/xykbrzgl" method="POST">
             <div class="form-group">
@@ -214,22 +220,22 @@
                 <input type="email" name="email" required>
             </div>
             <div class="form-group">
-                <label>Acquisition Details</label>
-                <textarea name="message" rows="4" placeholder="Indicate specific assets or bulk interest..." required></textarea>
+                <label>Vetting & Acquisition Details</label>
+                <textarea name="message" rows="4" placeholder="Indicate assets of interest or request for formal prospectus..." required></textarea>
             </div>
             <input type="hidden" name="_next" value="https://atomicbaseload.com">
-            <button type="submit" class="btn">Initiate Formal Inquiry</button>
+            <button type="submit" class="btn">Initiate Formal Vetting</button>
         </form>
     </section>
 
     <div class="bottom-nav">
         <a href="prospectus.pdf" class="btn-pdf">Download Institutional Prospectus (PDF)</a>
-        <p style="color: var(--muted); font-weight: 700;">Direct Contact: <a href="mailto:ceall06@proton.me" style="color:var(--accent); text-decoration:none;">ceall06@proton.me</a></p>
+        <p style="color: var(--muted); font-weight: 700;">Direct Contact: <a href="mailto:john@atomicbaseload.com" style="color:var(--accent); text-decoration:none;">john@atomicbaseload.com</a></p>
     </div>
 </div>
 
 <footer>
-    &copy; 2026 Atomic Baseload Hub | Institutional Asset Management
+    &copy; 2026 Atomic Baseload Hub | Managed by John J. Kelly, Managing Director
 </footer>
 
 </body>
